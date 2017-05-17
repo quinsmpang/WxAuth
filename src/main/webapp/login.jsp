@@ -8,10 +8,12 @@
 <title>微信</title>
 </head>
 <body style="font-size:40px;text-align:center;">
-    <form action="/WxAuth/wxCallBack" method="post">
+    <!-- <form action="/WxAuth/wxCallBack" method="post"> -->
+    <form action="/WxAuth/pcCallBack" method="post">
         <input type="text" name="account">
         <input type="password" name="password">
-        <input type="hidden" name="openid" value="${openid}">
+       <!-- <input type="hidden" name="openid" value="${openid}"> -->
+        <input type="hidden" name="unionid" value="${unionid}">
         <input type="submit" name="登录并绑定">
     </form>
 

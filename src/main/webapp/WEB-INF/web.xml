@@ -142,5 +142,32 @@
     <url-pattern>/wxCallBack</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>pcCallBack</servlet-name>
+    <servlet-class>com.pc.auth.servlet.CallBackServlet</servlet-class>
+    <init-param>
+      <param-name>dbUrl</param-name>
+      <param-value>jdbc:mysql://127.0.0.1:3306/auth</param-value>
+    </init-param>
+    <init-param>
+      <param-name>driverName</param-name>
+      <param-value>com.mysql.jdbc.Driver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>userName</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>passWord</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>pcCallBack</servlet-name>
+    <url-pattern>/pcCallBack</url-pattern>
+  </servlet-mapping>
+
 </web-app>
         

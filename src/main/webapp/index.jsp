@@ -7,7 +7,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>微信</title>
 </head>
-<body style="font-size:40px;text-align:center;">
+<body>
+<a href="/WxAuth/pcLogin">开放公众授权登录</a>
+<br/>
+<br/>
+<br/>
 <a href="/WxAuth/wxLogin">微信公众授权登录</a>
 </body>
 </html>
